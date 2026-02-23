@@ -1,0 +1,98 @@
+.card {
+  border: 1px solid #e7e7e7;
+  border-radius: 14px;
+  padding: 12px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 12px;
+  background-color: #f5f5f5;
+}
+
+.name {
+  margin: 0;
+  font-size: 16px;
+}
+
+.desc {
+  margin: 0;
+  color: #555;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-weight: 800;
+}
+
+.link {
+  text-decoration: none;
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  padding: 8px 10px;
+  text-align: center;
+}
+.link:hover {
+  background-color: red;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#delete_btn{
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: 2px solid #e7e7e7;
+}
+#like_btn{
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: 2px solid #e7e7e7;
+}
+#delete_btn:hover {
+  background-color: red;
+  color:white;
+
+}
+
+#like_btn:hover {
+  background-color: #00A5D2;
+  color:white;
+}
+#Telegram{
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+#Telegram_URL {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+#Telegram:hover {
+  background-color: #269aff;
+
+}
+
+#Telegram_URL:hover {
+  color:white
+}

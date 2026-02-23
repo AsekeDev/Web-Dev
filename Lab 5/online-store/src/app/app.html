@@ -1,0 +1,17 @@
+<div class="categories">
+  @for (c of categories; track c.id) {
+    <button class="category__button" (click)="selectCategory(c.id)"
+    [class.active] = "selectedCategoryId === c.id">
+      {{c.name}}
+    </button>
+  }
+  @if (selectedCategoryId === null) {
+    <p>Please select a category</p>
+  } @else {
+    <app-product-list
+      [products]="filteredProducts"
+      (deleteProduct)="handleDelete($event)"
+      (likeProduct)="handleLike($event)"></app-product-list>
+
+  }
+</div>

@@ -1,0 +1,16 @@
+<h1>Online Store</h1>
+@if (products().length === 0){
+    <p>No products in this category</p>
+} @else {
+  <div class="grid">
+    @for (p of products(); track p.id){
+      <app-product-card
+        [product]="p"
+        (deleteProduct)="removeProduct($event)"
+        (likeProduct)="like($event)"
+      ></app-product-card>
+    }
+  </div>
+}
+
+
