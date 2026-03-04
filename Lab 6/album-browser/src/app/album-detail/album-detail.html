@@ -1,0 +1,18 @@
+<div *ngIf="isLoading">Loading...</div>
+<div *ngIf="!isLoading && errorMsg">{{ errorMsg }}</div>
+
+<div *ngIf="!isLoading && album">
+  <h1>Album #{{ album.id }}</h1>
+  <p><b>UserId:</b> {{ album.userId }}</p>
+
+  <label>
+    <b>Title:</b>
+    <input [(ngModel)]="editedTitle" />
+  </label>
+
+  <div class="actions">
+    <button (click)="save()">Save</button>
+    <button (click)="viewPhotos()">View Photos</button>
+    <button (click)="back()">Back</button>
+  </div>
+</div>
